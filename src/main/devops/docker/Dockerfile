@@ -1,6 +1,6 @@
 FROM openjdk:8u121-jdk-alpine
 
-RUN unlink /etc/localtime && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+RUN unlink /etc/localtime && ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 RUN rm -rf /tmp/* /var/tmp/*
 
 VOLUME /tmp
