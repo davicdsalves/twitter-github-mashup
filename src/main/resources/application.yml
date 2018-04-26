@@ -1,0 +1,17 @@
+logging.path: /tmp/mashup/log
+
+github:
+  endpoint:
+    url-base: http://api.github.com
+    search-url: ${github.endpoint.url-base}/search/repositories
+    parameter-name: q
+    search-keyword: ${KEYWORD:reactive}
+  timeout: 10_000
+  max-connections: 10
+  randomize-repositories: ${RANDOM-REPOS:true}
+
+twitter:
+  app-id: ${TWITTER-APP-ID:}
+  app-secret: ${TWITTER-APP-SECRET:}
+  search-page-size: ${MAX-TWEETS:15}
+  max-projects: ${MAX-PROJECTS:10}
