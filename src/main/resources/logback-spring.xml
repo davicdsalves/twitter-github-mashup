@@ -9,6 +9,9 @@
         </encoder>
     </appender>
 
+
+    <logger name="org.apache.http.client.protocol" level="ERROR" additivity="true"/>
+
     <logger name="com.mashup.challenge" level="INFO" additivity="true"/>
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
